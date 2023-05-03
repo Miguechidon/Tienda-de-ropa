@@ -7,10 +7,9 @@ body {
 }
 
 .container {
-    background: #A29E9D;
-    padding: 30px;
+    padding: 15px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 #betonav{
@@ -24,4 +23,33 @@ body {
     height: 115px;
     border-radius: 50px;
     margin-bottom: 16px;
+    
+}
+
+.control {
+    width: 25%;
+    background: #A29E9D;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #55332d;
+    font-size: 18px;
+}
+
+.controls {
+    width: 75%;
+    background: #A29E9D;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #55332d;
+    font-size: 18px;
+}
+
+.botones {
+    width: 25%;
+    background: #faf5f4;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    
 }
