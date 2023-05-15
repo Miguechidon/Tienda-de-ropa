@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Diseño.css">
+    <title>TareaListaDeCompras</title>
+
+
+    
+</head>
+<body>
+    <h1>Mi lista de compras</h1>
+    <div>
+        <label for="item">Agrega un nuevo articulo</label>
+        <input type="text" name="item" id="txtArticulo">
+        <input type="button" value="Añadir" onclick="añadirArticulo()" />
+    </div>
+    <ul id="lstArticulos">
+        
+    </ul>
+    <script>
+        const lstArticulos = document.getElementById('lstArticulos');
+        const txtArticulo = document.getElementById('txtArticulo');
+
+        function añadirArticulo() {
+            let valorTxtArticulo = txtArticulo.value;
+            txtArticulo.value = ' ';
+
+            const lstArticuloNuevo = document.createElement('li');
+            const lstTxtNuevo = document.createElement('span');
+            const lstBtnNuevo = document.createElement('button');
+
+            lstArticuloNuevo.appendChild(lstTxtNuevo);
+            lstTxtNuevo.textContent = valorTxtArticulo;
+            lstArticuloNuevo.appendChild(lstBtnNuevo);
+            lstBtnNuevo.textContent = 'Borrar' ;
+            lstArticulos.appendChild(lstArticuloNuevo);
+
+            lstBtnNuevo.onclick = function(e) {
+                lstArticulos.removeChild(lstArticuloNuevo);
+            }
+            txtArticulo.focus();
+            
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+
+    </script>
+</html>
