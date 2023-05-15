@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La 9na sinfonia</title>
+    <link rel="stylesheet" href="CSS CRUD ropa.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">	
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#userList').DataTable();
+    } );
+</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">La 9na sinfonia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Catalogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Acerca de nosotros.html">Acerca de nosotros</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Soporte.html" class="nav-link">Soporte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Registrate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Inicio de sesion.html" class="nav-link">Iniciar sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Mi cuenta.html" class="nav-link">Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Carrito.html" class="nav-link">Carrito</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img id="betonav" src="Imagenes/beto.jpeg" alt="Beethoven">
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
+                <ul class="nav nav-tabs justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link active" id="list-tab" data-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="false">Lista</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="form-tab" data-toggle="tab" href="#form" role="tab" aria-controls="form" aria-selected="true">Formulario</a>				   	
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="list" role="tabpanel" aria-labelledby="list-tab">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Usuarios</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="userList" class="table table-bordered table-hover table-striped">
+                                        <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Nombre</th>
+                                            <th scope="col">Apellido</th>
+                                            <th scope="col">Usuario</th>
+                                            <th scope="col">E-mail</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Miguel</td>
+                                            <td>Salazar</td>
+                                            <td>miguechidon</td>
+                                            <td>ejemplo.com</td>
+                                            <td>
+                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="form" role="tabpanel" aria-labelledby="form-tab">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Informacion de Usuario</h4>
+                            </div>
+                            <div class="card-body">
+                                <form class="form" role="form" autocomplete="off">
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label">Nombre</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="text" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label">Apellido
+                                        </label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="text" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label">Usuario</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label">Contraseña</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-form-label form-control-label">Confirmar contraseña</label>
+                                        <div class="col-lg-9">
+                                            <input class="form-control" type="password" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12 text-center">
+                                            <input type="reset" class="btn btn-secondary" value="Cancel">
+                                            <input type="button" class="btn btn-primary"
+                                                value="Save Changes">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
