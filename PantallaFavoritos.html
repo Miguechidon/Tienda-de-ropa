@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function agregar(){
+        // Para IE
+        if ((navigator.appName=="Microsoft Internet Explorer") && (parseInt(navigator.appVersion)>=4)) {
+        var url="http://nombre-de-mi-blog.blogspot.com/"; //
+        var titulo="Nombre de tu blog"; //
+        window.external.AddFavorite(url,titulo);
+        }
+        // Para Firefox
+        else {
+        if(navigator.appName == "Netscape")
+        //
+        window.sidebar.addPanel("Nombre de tu blog", "http://nombre-de-mi-blog.blogspot.com","");
+        }
+        }
+        </script>
+        <a href="javascript:agregar()">Agrégame a tus favoritos</a>
+</body>
+</html>
