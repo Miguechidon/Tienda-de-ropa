@@ -1,0 +1,8 @@
+<script>
+function agregar(){
+// Para IE
+if ((navigator.appName=="Microsoft Internet Explorer") && (parseInt(navigator.appVersion)>=4)) {
+var url="ProyectoPBEquipo"; //
+var titulo="FIMODA"; //
+window.external.AddFavorite(url,titulo);
+}
