@@ -11,3 +11,58 @@ body {
     height: 50px;
     margin-left: -50px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.wrap {
+       width: 90%;
+       max-width: 1000px;
+       
+}
+
+.widget {
+    width: 40%;
+    margin: 2em;
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+
+}
+
+.fecha {
+    font-family: 'Times New Roman', Times, serif;   
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    padding: 20px;
+    background: rgba(red, green, blue, alpha);
+    width: 100%;
+}
+
+.relog {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    padding: 20px;
+    font-size: 4em;
+    text-align: center;
+    background: rgba(rgb(255, 4, 4), green, blue, alpha);
+}
+
+.reloj .caja-segundos {
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+    font-size: 2rem;
+    display: block;
+}
