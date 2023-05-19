@@ -1,7 +1,6 @@
 body {
     margin: 100px;
     padding:0;
-    font-family: monserrat;
     background: linear-gradient(150deg, #E6E1E0, #A29E9D);
     height:100vh;
 }
@@ -39,30 +38,23 @@ body {
 }
 
 .fecha {
-    font-family: 'Times New Roman', Times, serif;   
+    font-family: Arial, Helvetica, sans-serif;   
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 0.3125rem;
     padding: 20px;
-    background: rgba(red, green, blue, alpha);
     width: 100%;
 }
 
 .relog {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     padding: 20px;
     font-size: 4em;
     text-align: center;
-    background: rgba(rgb(255, 4, 4), green, blue, alpha);
 }
 
 .reloj .caja-segundos {
     display: inline-block;
-}
-
-.reloj .segundos,
-.reloj .ampm {
-    font-size: 2rem;
-    display: block;
+    
 }
