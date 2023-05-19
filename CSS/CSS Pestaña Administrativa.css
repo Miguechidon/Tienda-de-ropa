@@ -58,3 +58,13 @@ body {
     display: inline-block;
     
 }
+
+.btn1 {
+    display: block;
+    padding: 20px;
+    width: 25%;
+    background: #ffffff;
+    margin-bottom: 22px;
+    border-radius: 52px;
+    
+}
