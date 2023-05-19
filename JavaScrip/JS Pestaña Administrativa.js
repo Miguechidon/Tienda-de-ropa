@@ -23,6 +23,17 @@
     var semana = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
     pDiaSemana.textContent = semana[diaSemana];
 
+    pDia.textContent = dia;
+
+    var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+    pMes.textContent = meses[mes];
+
+    pYear.textContent = year;
+
+    if (horas >= 12 ) {
+        horas = horas - 12;
+    }
+
 
     };
 
